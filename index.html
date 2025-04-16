@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Vida Loka - Racionais MC’s</title>
+  <link rel="stylesheet" href="assets/css/styles-f.css">
+  <link rel="stylesheet" href="assets/fonts/CloisterBlack.ttf">
+</head>
+<body>
+  <div class="poema-container">
+    <h1>Vida Loka Pt. 1</h1>
+    <h2>Racionais mc’s</h2>
+
+ <!-- Botão com ícone -->
+<button id="play-btn">▶</button>
+
+  <!-- Player de áudio -->
+  <audio id="bg-music">
+    <source src="assets/audio/vidaloka.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <script>
+    const btn = document.getElementById('play-btn');
+    const audio = document.getElementById('bg-music');
+
+    let isPlaying = false;
+
+    btn.addEventListener('click', () => {
+      if (!isPlaying) {
+        audio.play();
+        btn.textContent = '⏸';
+        isPlaying = true;
+      } else {
+        audio.pause();
+        btn.textContent = '▶';
+        isPlaying = false;
+      }
+    });
+  </script>
+
+    <p>
+      Fé em Deus que ele é justo<br>
+      Ei irmão nunca se esqueça, na guarda, guerreiro<br>
+      Levanta a cabeça, truta, onde estiver seja lá como for<br>
+      Tenha fé porque até no lixão nasce flor<br><br>
+
+      Ore por nós pastor, lembra da gente<br>
+      No culto dessa noite, firmão segue quente<br>
+      Admiro os crente, da licença aqui<br>
+      Mó função, mó tabela, pô, desculpa aí<br><br>
+
+      Eu me, sinto às vezes meio pá, inseguro<br>
+      Que nem um vira-lata, sem fé no futuro<br>
+      Vem alguém lá, quem é quem, quem será meu bom<br>
+      Dá meu brinquedo de furar moletom<br><br>
+
+      Porque os bico que me vê com os truta na balada<br>
+      Tenta ver, quer saber de mim, não vê nada<br>
+      Porque a confiança é uma mulher ingrata<br>
+      Que te beija e te abraça, te rouba e te mata<br><br>
+
+      Desacreditar, nem pensa, só naquela<br>
+      Se uma mosca ameaçar me catar, piso nela
+    </p>
+    <img src="assets/img/racionais.jpg" alt="Racionais MC's" class="racionais-img">
+  </div>
+</body>
+</html>
